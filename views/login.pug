@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 ログイン
+
+  form(action="/login" method="POST")
+    div
+      label(for="username") ユーザ名
+      input(type="text" name="username")
+    div
+      label(for="password") パスワード
+      input(type="password" name="password")
+    div
+      button(type="submit") ログイン
